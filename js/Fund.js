@@ -32,7 +32,7 @@ class Fund {
 
         let x = this.canvas.width / 2;
         let y = this.canvas.height / 2;
-        let r = x - 10; //전체 너비보다 30픽셀 작게 설정
+        let r = x - 30; //전체 너비보다 30픽셀 작게 설정
 
         let PI = Math.PI;
         let p = Math.floor(this.current / this.total * 100);
