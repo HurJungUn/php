@@ -90,7 +90,7 @@ class App {
     invesetFund() {
         let fundNo = document.querySelector("#investNo").value;
         let money = document.querySelector("#money").value * 1;
-
+        
         if (money <= 0) {
             this.showMsg("금액을 올바르게 입력하세요");
             return;
@@ -107,7 +107,6 @@ class App {
                     let json = JSON.parse(req.responseText);
                     this.showMsg(json.msg);
                     if (json.success) {
-                        this.loadingFundList();
                         this.popup.querySelector("#btnClose").click();
                         this.loadingFundList();
                         this.loadingInvestorList();
